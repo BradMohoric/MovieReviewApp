@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+body {
+  background-image: url('./Images/smoke-background.avif');
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#reviewBox {
+  border: solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#header{
+  font-family: NSimSun;
+  font-size: 80px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.on {
+  color: rgb(236, 236, 44);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.off {
+  color: rgb(187, 161, 161);
+}
+
+#cardBod {
+  background-color: rgb(5, 134, 134);
+}
+
+#starButton {
+  background-color: black;
 }

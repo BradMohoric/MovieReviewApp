@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import './App.css';
+import MovieList from './components/movieList';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+//main app page. Has a H1 header with the title, and a container div to hold the movielist component that holds everything else.
+export default class App extends React.Component {
+  render () {
+    return (
+      <div>
+        <h1 className="text-center" id="header">Cult Reviews</h1>
+        <br></br>
+        <div className="container">
+          <MovieList />
+        </div>
+      </div>
+          
+    );
+  }
 }
-
-export default App;
